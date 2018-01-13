@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.driver.AppleAPIC</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -34,10 +34,10 @@
 			<string>Apple8259PICInterruptController</string>
 			<key>IONameMatch</key>
 			<string>8259-pic</string>
-			<key>IOProviderClass</key>
-			<string>IOPlatformDevice</string>
 			<key>IOProbeScore</key>
 			<integer>1000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPlatformDevice</string>
 		</dict>
 		<key>io-apic</key>
 		<dict>
@@ -55,9 +55,9 @@
 	<string>Copyright Apple Computer, Inc. 2003-2008</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.kpi.libkern</key>
-		<string>8.7.2</string>
 		<key>com.apple.kpi.iokit</key>
+		<string>8.7.2</string>
+		<key>com.apple.kpi.libkern</key>
 		<string>8.7.2</string>
 	</dict>
 	<key>OSBundleRequired</key>

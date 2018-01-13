@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,7 +119,7 @@
 			attributes = {
 			};
 			buildConfigurationList = A69550750A06D9A400FD6906 /* Build configuration list for PBXProject "AppleAPIC" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (

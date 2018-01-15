@@ -227,8 +227,8 @@ IOReturn Apple8259PIC::handleInterrupt(void *      savedState,
     IntelClockFuncType	clockFunc;
     
     vectorNumber = source - kIntelReservedIntVectors;
-    
-    kprintf("Apple8259PIC::handleInterrupt %d (%d)\n", source, vectorNumber);
+
+    kprintf("Apple8259PIC::handleInterrupt %d (%d)\n", source, (int)vectorNumber);
     
     if (vectorNumber >= kNumVectors)
         return kIOReturnSuccess;
@@ -309,7 +309,7 @@ bool Apple8259PIC::vectorCanBeShared(long vectorNumber,
 void Apple8259PIC::initVector(long vectorNumber,
                                       IOInterruptVector * vector)
 {
-    super::initVector(vectorNumber, vector);
+    super::initVector((IOInterruptVectorNumber)vectorNumber, vector);
 }
 
 //---------------------------------------------------------------------------

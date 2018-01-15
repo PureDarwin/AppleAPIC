@@ -649,7 +649,7 @@ IOReturn AppleAPIC::callPlatformFunction( const OSSymbol * function,
 		// param1 - vector number
 		// param2 - APIC ID
 		
-		return setVectorPhysicalDestination( (uintptr_t) param1, (uintptr_t) param2 );
+		return setVectorPhysicalDestination( (UInt32) (uintptr_t) param1, (UInt32) (uintptr_t) param2 );
 	}
 
     return super::callPlatformFunction( function, waitForFunction,
